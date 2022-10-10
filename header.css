@@ -13,6 +13,7 @@ header{
   justify-content: space-between;
   margin-top: 1rem;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .logo{
@@ -54,4 +55,24 @@ header{
 .avatar:hover{
   border: 2px solid hsl(26, 100%, 55%);
   border-radius: 50%;
+}
+
+@media (max-width: 480px){
+  header{
+    flex-direction: column;
+  }
+  .menu{
+  
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+
+  .menu li{
+    font-size: 14px;
+    margin-right: 1.5rem;
+  }
+
+  .menu2{
+    padding-left: 6rem;
+  }
 }

@@ -86,3 +86,37 @@ h4{
 .itemUnity li{
 margin-right: 1.6rem;
 }
+
+.btnCart{
+  background-color:  hsl(26, 100%, 55%);
+  color: #ffffff;
+  width:  100px;
+  height:25px;
+}
+
+
+/*=========================================Mobile Version===========*/
+@media (max-width: 480px){
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutSide{
+    width:300px;
+    margin:auto;
+  }
+
+  .photo_principal{
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo_principal img{
+    margin:auto;
+    max-width: 280px;
+  }
+
+}
