@@ -42,6 +42,7 @@ main{
   flex-direction: column;
   justify-content: space-between;
   margin-left:50px ;
+  margin-top: 2rem;
 }
 
 h4{
@@ -51,11 +52,13 @@ h4{
 .aboutItem{
   color:hsl(219, 9%, 45%);
   font-size: 14px;
+  margin-bottom: 2rem;
 }
 
 .prices{
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .price__item{
@@ -71,6 +74,7 @@ h4{
 .itemUnity{
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 .counterPrice{
@@ -101,13 +105,18 @@ margin-right: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 3rem;
   }
 
   .aboutSide{
+    flex-direction: column;
+    justify-content: space-between;
     width:300px;
     margin:auto;
   }
-
+  .sidePhotos{
+    justify-content: space-between;
+  }
   .photo_principal{
     margin-left: 0;
     align-items: center;
