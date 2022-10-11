@@ -81,9 +81,11 @@
         </div>
         <div class="itemUnity">
           <ul class="counterPrice">
-            <li><img src="./images/icon-minus.svg" alt="" /></li>
+            <!--<li><img src="./images/icon-minus.svg" alt="" /></li> -->
+            <li><button class="btnMinus" onclick="decrement()">-</button></li>
             <li><label id="lbQtde" for="">0</label></li>
-            <li><img src="./images/icon-plus.svg" alt="" /></li>
+            <!--<li><img src="./images/icon-plus.svg" alt="" /></li> -->
+            <li><button class="btnPlus" onclick="increment()">+</button></li>
           </ul>
           <ul>
             <li><button class="btnCart">Add to cart</button></li>
@@ -91,6 +93,8 @@
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
 
     <div class="attribution">
       Challenge by
