@@ -4,6 +4,8 @@ function increment() {
   document.getElementById('lbQtde').innerText = data
 }
 function decrement() {
-  data = data - 1
-  document.getElementById('lbQtde').innerText = data
+  if (data > 0) {
+    data = data - 1
+    document.getElementById('lbQtde').innerText = data
+  }
 }
