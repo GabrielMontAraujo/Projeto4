@@ -93,6 +93,7 @@ margin-right: 1.6rem;
 
 .btnCart{
   background-color:  hsl(26, 100%, 55%);
+  border: 0;
   color: #ffffff;
   width:  100px;
   height:25px;
