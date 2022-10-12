@@ -37,25 +37,35 @@ header{
 }
 
 .menu2{
-  margin-right: 4rem;
-  padding-left: 12rem;
+  align-items: baseline;
+  margin-right: 18rem;
+  padding-left: 8rem;
+  justify-content: space-around;
 }
 
 .menu2 a{
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .avatar{
   border: 2px solid #ffffff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  top: 2rem;
+  width: 30px;
+  height: 30px;
 }
 
 .avatar:hover{
   border: 2px solid hsl(26, 100%, 55%);
   border-radius: 50%;
 }
+
+.btn-primary{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 
 hr{
   margin: 0 4rem;
@@ -71,8 +81,8 @@ hr{
   }
   .menu{
     display: none;
-    /*margin-left: 4rem;
-    margin-top: 1rem; */
+    margin:0;
+    padding:0;
   }
 
   /*.menu li{
@@ -81,11 +91,16 @@ hr{
   } */
 
   .menu2{
-    padding-left: 3rem;
+    display: flex;
+    padding-left: 1.5rem;
+    margin-right: 9rem;
   }
 
   hr{
     max-width: 340px;
     margin: 1rem;
   }
+
+  
+    
 }

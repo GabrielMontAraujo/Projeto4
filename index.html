@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="main.css" />
 
     <link
@@ -41,10 +42,43 @@
         <li>About</li>
         <li>Contact</li>
       </nav>
+      <!-- ============================MODAL CART========================-->
       <div class="menu2">
-        <a href=""><img src="./images/icon-cart.svg" /></a>
+        <button
+          type="button"
+          class="btn-primary"
+          data-toggle="modal"
+          data-target="#modalExemplo"
+        >
+          <img src="./images/icon-cart.svg" />
+        </button>
+        <!-- ============================FIM MODAL CART========================-->
         <a href=""><img class="avatar" src="./images/image-avatar.png" /></a>
       </div>
+      <!--=========================================JANELA MODAL=====================================-->
+      <div id="modalExemplo">
+        <h2 class="cartTitle">Cart</h2>
+        <hr class="lineCart" />
+        <div class="cartPrincipal">
+          <ul>
+            <img
+              class="modalImage"
+              src="./images/image-product-1-thumbnail.jpg"
+            />
+          </ul>
+          <ul mdTitle_price>
+            <li>
+              <label id="modalTitle">Fall Limited Edition Sneakers</label>
+            </li>
+            <li><label id="lblCart__sale">$125 x 3 = $375</label></li>
+          </ul>
+          <ul>
+            <button id="deleteModal">XX</button>
+          </ul>
+        </div>
+        <button id="closeModal">Checkout</button>
+      </div>
+      <!--=========================================FIM JANELA MODAL=====================================-->
     </header>
     <hr />
     <main>
@@ -78,8 +112,8 @@
         </div>
         <div class="prices">
           <ul class="price__item">
-            <li><label id="valueDesc" for="">$125.00</label></li>
-            <li><label id="desc" for="">50%</label></li>
+            <li>$<label id="valueDesc">125.00</label></li>
+            <li><label id="desc">50%</label></li>
           </ul>
           <ul class="price__item">
             <li><label for="" id="nthValue">$250.00</label></li>
@@ -95,7 +129,7 @@
           </ul>
           <ul>
             <li>
-              <button class="btnCart">
+              <button class="btnCart" onclick="productSale()">
                 <img src="./images/iconCartWhite.png" />
                 Add to cart
               </button>
