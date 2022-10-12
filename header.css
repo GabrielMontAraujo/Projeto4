@@ -57,22 +57,35 @@ header{
   border-radius: 50%;
 }
 
+hr{
+  margin: 0 4rem;
+  margin-bottom: 1.5rem;
+  max-width: 960px;
+  opacity: 0.3;
+}
+
 @media (max-width: 480px){
   header{
-    flex-direction: column;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
   }
   .menu{
-  
-    margin-left: 4rem;
-    margin-top: 1rem;
+    display: none;
+    /*margin-left: 4rem;
+    margin-top: 1rem; */
   }
 
-  .menu li{
+  /*.menu li{
     font-size: 14px;
     margin-right: 1.5rem;
-  }
+  } */
 
   .menu2{
-    padding-left: 6rem;
+    padding-left: 3rem;
+  }
+
+  hr{
+    max-width: 340px;
+    margin: 1rem;
   }
 }

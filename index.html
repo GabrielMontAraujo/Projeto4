@@ -46,6 +46,7 @@
         <a href=""><img class="avatar" src="./images/image-avatar.png" /></a>
       </div>
     </header>
+    <hr />
     <main>
       <section class="sidePhotos">
         <div class="photo_principal">
@@ -61,7 +62,12 @@
       <section class="aboutSide">
         <div class="Titles">
           <li><h4>Sneaker Company</h4></li>
-          <li><h2>Fall Limited Edition Sneakers</h2></li>
+          <li>
+            <h2>
+              Fall Limited Edition <br />
+              Sneakers
+            </h2>
+          </li>
         </div>
         <div class="aboutItem">
           <p>
@@ -72,11 +78,11 @@
         </div>
         <div class="prices">
           <ul class="price__item">
-            <li>$125.00</li>
-            <li>50%</li>
+            <li><label id="valueDesc" for="">$125.00</label></li>
+            <li><label id="desc" for="">50%</label></li>
           </ul>
           <ul class="price__item">
-            <li>$250.00</li>
+            <li><label for="" id="nthValue">$250.00</label></li>
           </ul>
         </div>
         <div class="itemUnity">
@@ -88,7 +94,12 @@
             <li><button class="btnPlus" onclick="increment()">+</button></li>
           </ul>
           <ul>
-            <li><button class="btnCart">Add to cart</button></li>
+            <li>
+              <button class="btnCart">
+                <img src="./images/iconCartWhite.png" />
+                Add to cart
+              </button>
+            </li>
           </ul>
         </div>
       </section>
