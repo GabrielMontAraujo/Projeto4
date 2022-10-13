@@ -15,7 +15,18 @@ function decrement() {
 
 function productSale() {
   var sale = data * price
-  console.log(sale)
+  sendToCart()
+  document.getElementById('nroItem').innerText = data
+}
+
+const btnSendToCart = document.querySelector('#btnCart')
+btnSendToCart.addEventListener('click', sendToCart)
+
+function sendToCart(e) {
+  const itemNro = document.querySelector('#nroItem')
+  if (data > 0) {
+    itemNro.classList.add('visible')
+  }
 }
 
 const btnModal = document.querySelector('.btn-primary')

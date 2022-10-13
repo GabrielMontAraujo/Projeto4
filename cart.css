@@ -17,6 +17,23 @@
   transform: translateY(-50);
 }
 
+#nroItem{
+  background-color:  hsl(26, 100%, 55%);
+  border-radius: 100%;
+  color: #ffffff;
+  position: absolute;
+  top:12px;
+  left: 910px;
+  width: 15px;
+  opacity: 0;
+  transition: all 200ms ease-out ;
+  text-align: center;
+}
+
+#nroItem.visible{
+  opacity: 1;
+}
+
 .cartTitle{
   font-size: 12px;
   margin: .3rem;
@@ -96,6 +113,10 @@
     left: 205px;
     top: 85px;
     max-width: 355px;
+  }
+
+  #nroItem{
+    left: 235px;
   }
   
 }

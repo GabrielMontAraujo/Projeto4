@@ -44,11 +44,13 @@
       </nav>
       <!-- ============================MODAL CART========================-->
       <div class="menu2">
+        <label id="nroItem">0</label>
         <button
           type="button"
           class="btn-primary"
           data-toggle="modal"
           data-target="#modalExemplo"
+          onclick="openModal()"
         >
           <img src="./images/icon-cart.svg" />
         </button>
@@ -70,13 +72,18 @@
             <li>
               <label id="modalTitle">Fall Limited Edition Sneakers</label>
             </li>
-            <li><label id="lblCart__sale">$125 x 3 = $375</label></li>
+            <li>
+              <label id="lblCart__sale"
+                ><span id="a1">$125</span><span id="a2"> x 3 =</span
+                ><span id="a3">$375</span></label
+              >
+            </li>
           </ul>
           <ul>
             <button id="deleteModal">XX</button>
           </ul>
         </div>
-        <button id="closeModal">Checkout</button>
+        <button id="closeModal" onclick="closeModal()">Checkout</button>
       </div>
       <!--=========================================FIM JANELA MODAL=====================================-->
     </header>
