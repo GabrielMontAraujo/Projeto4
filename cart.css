@@ -10,6 +10,7 @@
   width: 300px;
   opacity: 0;
   transition: all 200ms ease-out ;
+  z-index: 9;
 }
 
 #modalExemplo.visible{
@@ -23,7 +24,7 @@
   color: #ffffff;
   position: absolute;
   top:12px;
-  left: 930px;
+  left: 990px;
   width: 15px;
   opacity: 0;
   transition: all 200ms ease-out ;

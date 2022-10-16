@@ -86,3 +86,15 @@ function closeModal(e) {
   const modalEl = document.querySelector('#modalExemplo')
   modalEl.classList.remove('visible')
 }
+
+const btnGallery = document.querySelector('.arrow-right')
+btnGallery.addEventListener('click', nextImage)
+
+function nextImage() {
+  var dataImage = 1
+  var localImage = document.getElementById('itemGd')
+  while (dataImage < 5) {
+    dataImage = dataImage + 1
+    localImage.src = './images/image-product-' + dataImage + '.jpg'
+  }
+}
