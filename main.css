@@ -195,5 +195,17 @@ h4{
     margin:auto;
     max-width: 280px;
   }
+.photoMini{
+  align-items: center;
+  justify-content:flex-start;
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  padding-left: 15px;
+}
+  .photoMini img{
+    margin-right: 7px;
+    max-width: 55px;
+  }
 
 }

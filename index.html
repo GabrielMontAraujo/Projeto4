@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="main.css" />
@@ -83,6 +84,25 @@
         </div>
         <button id="closeModal" onclick="closeModal()">Checkout</button>
       </div>
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menuT">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"
+              ><li>Show me more</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+
       <!--=========================================FIM JANELA MODAL=====================================-->
     </header>
     <hr />
@@ -94,20 +114,16 @@
             &#10094;
           </button>
           <button
-            class="arrow-right control"
+            class="arrow-right"
             aria-label="Next Image"
             onclick="nextImage()"
           >
             &#10095;
           </button>
           <div class="gallery-wrapper">
-            <div id="viewG" class="gallery">
+            <div class="gallery">
+              <img class="itemG selected" src="./images/image-product-1.jpg" />
               <img
-                class="itemG"
-                id="itemGd"
-                src="./images/image-product-1.jpg"
-              />
-              <!-- <img
                 class="itemG"
                 src="./images/image-product-2.jpg"
                 alt="foto de tênis"
@@ -121,7 +137,8 @@
                 class="itemG"
                 src="./images/image-product-4.jpg"
                 alt="foto de tênis"
-              /> -->
+              />
+              -->
             </div>
           </div>
         </div>

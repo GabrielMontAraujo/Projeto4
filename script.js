@@ -90,11 +90,22 @@ function closeModal(e) {
 const btnGallery = document.querySelector('.arrow-right')
 btnGallery.addEventListener('click', nextImage)
 
+let currentImageindex = 0
+let images = document.querySelectorAll('.itemG')
+
 function nextImage() {
-  var dataImage = 1
-  var localImage = document.getElementById('itemGd')
-  while (dataImage < 5) {
-    dataImage = dataImage + 1
-    localImage.src = './images/image-product-' + dataImage + '.jpg'
+  images[currentImageindex].classList.remove('selected')
+
+  currentImageindex++
+  images[currentImageindex].classList.add('selected')
+  console.log('passou')
+}
+
+const menuChk = document.getElementById('#menuT')
+
+function Check(e) {
+  if (document.getElementById('#menuToogle input').checked == true) {
+    menuChk.classList.remove('visible')
   }
+  menuChk.classList.add('visible')
 }
