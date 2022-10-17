@@ -48,7 +48,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background:hsl(26, 100%, 55%);
   border-radius: 3px;
   
   z-index: 11;
@@ -93,12 +93,13 @@
 
 #menuT
 {
+  box-shadow:5px 5px 0 grey 0.9;
   position: absolute;
   width: 300px;
   margin: -100px 0 0 0;
   padding: 50px;
-  padding-top: 225px;
-  right: -100px;
+  padding-top: 125px;
+  right: -150px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;  
