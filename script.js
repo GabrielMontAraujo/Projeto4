@@ -87,17 +87,25 @@ function closeModal(e) {
   modalEl.classList.remove('visible')
 }
 
-const btnGallery = document.querySelector('.arrow-right')
-btnGallery.addEventListener('click', nextImage)
-
-let currentImageindex = 0
-let images = document.querySelectorAll('.itemG')
-
-function nextImage() {
-  images[currentImageindex].classList.remove('selected')
-
-  currentImageindex++
-  images[currentImageindex].classList.add('selected')
+var indexValue = 1
+showImgT(indexValue)
+function side_slide(e) {
+  showImgT(indexValue +=e);
+}
+function showImgT(e) {
+  var i
+  const imgTW = document.querySelectorAll('#imgT').length
+  if (e > imgTW.length) {
+    indexValue = 1
+  }
+  if (e < 1) {
+    indexValue = imgTW.length
+  }
+  for (i = 0; i < indexValue; i++) {
+    imgTW[i].style.display = 'none'
+  }
+  indexValue = [indexValue - 1]
+  imgTW[indexValue].style.display = 'block'
   console.log('passou')
 }
 

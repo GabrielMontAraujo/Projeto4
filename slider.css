@@ -1,90 +1,73 @@
-.container{
-  position: absolute;
-  max-width: 250px;
-  margin: 0 auto;
-  z-index: 2;
+#{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*.gallery-wrapper::-webkit-scrollbar {
-  display: block;
-}*/
-
-.gallery{
+body{
   display: flex;
-  /*flex-flow: row nowrap;*/
-  width: 300px;
-  height:300px;
-  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.content{
+  height: 400px;
+  width: 700px;
   overflow: hidden;
+  position: relative;   
 }
 
-.arrow-left{
-  background: transparent;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+
+.images img{
+  height: 100%;
+  width: 100%;
+}
+
+.content .slide{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 20px;
-  bottom: 0;
-  font-size: 40px;
-  line-height: 50px;
-  width: 40px;
-  text-align: center;
-  opacity: 0.1;
-  transition: all 600ms ease-in-out;
-}
-
-.arrow-left:hover{
-  opacity: 1;
-}
-
-.arrow-right{
-  background:transparent;
-  border: none;
-  color: #FFFFFF;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid white;
+  height: 45px;
+  width: 45px;
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 260px;
-  right: auto;
-  bottom: 0;
-  font-size: 40px;
-  line-height: 50px;
-  width: 40px;
-  text-align: center;
-  opacity: 0.1;
-  transition: all 600ms ease-in-out;
-  z-index: 3;
+  background: rgba(255, 255, 255, 0.1);
+
 }
 
-.arrow-right:hover{
-  opacity: 1;
+.content .slide:hover{
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.itemG{
-  border-radius: 10px;
-  width: 300px;
-  position: relative;
-  /*height: 300px;*/
-  opacity: 0;
+.slide span{
+  font-size: 35px;
+  color: white;
+  line-height: 41px;
 }
 
-.itemG.selected{
-  opacity:1;
+.content .right{
+  right: 0;
 }
+
 
 /*=========================================Mobile Version===========*/
 
 @media (max-width: 480px){
 
-  .gallery{
-    width:280px
+  .gallery-wrapper{
+    width:280px;
+    height:280px
   }
-  .itemG{
+  /*#itemG{
     max-width: 280px;
-  }
+    max-height: 280px;
+  }*/
 
   .arrow-right{
     left: 237px;

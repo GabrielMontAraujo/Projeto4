@@ -93,7 +93,7 @@
 
 #menuT
 {
-  box-shadow:5px 5px 0 grey 0.9;
+  box-shadow:5px 5px 0 rgb(87, 86, 86) 0.9;
   position: absolute;
   width: 300px;
   margin: -100px 0 0 0;
@@ -110,6 +110,7 @@
 }
 
 #menuT.visible{
+  display:none;
   z-index: -2;
 }
 

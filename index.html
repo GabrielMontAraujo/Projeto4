@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="slide2.css" />
     <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="main.css" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -107,44 +112,25 @@
     <main>
       <section class="sidePhotos">
         <!--======================================Slider Carousel===============-->
-        <div class="container">
-          <button class="arrow-left control" aria-label="Previous Image">
-            &#10094;
-          </button>
-          <button
-            class="arrow-right"
-            aria-label="Next Image"
-            onclick="nextImage()"
-          >
-            &#10095;
-          </button>
-          <div class="gallery-wrapper">
-            <div class="gallery">
-              <img class="itemG selected" src="./images/image-product-1.jpg" />
-              <img
-                class="itemG"
-                src="./images/image-product-2.jpg"
-                alt="foto de tênis"
-              />
-              <img
-                class="itemG"
-                src="./images/image-product-3.jpg"
-                alt="foto de tênis"
-              />
-              <img
-                class="itemG"
-                src="./images/image-product-4.jpg"
-                alt="foto de tênis"
-              />
-              -->
-            </div>
+        <div class="content">
+          <div class="images">
+            <img id="imgT" src="./images/image-product-1.jpg" />
+            <img id="imgT" src="./images/image-product-2.jpg" />
+            <img id="imgT" src="./images/image-product-3.jpg" />
+            <img id="imgT" src="./images/image-product-4.jpg" />
+          </div>
+          <div onclick="side_slide(-1)" class="slide left">
+            <span class="fa fa-angle-left"></span>
+          </div>
+          <div onclick="side_slide(1)" class="slide right">
+            <span class="fa fa-angle-right"></span>
           </div>
         </div>
-        <!--====================================Fim Slider Carousel==============-->
+        <!--====================================Fim Slider Carousel==============
 
         <div class="photo_principal">
           <img src="./images/image-product-1.jpg" alt="" />
-        </div>
+        </div>-->
         <div class="photoMini">
           <img src="./images/image-product-1-thumbnail.jpg" alt="" />
           <img src="./images/image-product-2-thumbnail.jpg" alt="" />
