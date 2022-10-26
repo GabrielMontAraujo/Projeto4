@@ -89,16 +89,16 @@ function closeModal(e) {
 
 var indexValue = 1
 showImgT(indexValue)
-function side_slide(e) {
-  showImgT(indexValue +=e);
+function side_slide(T) {
+  showImgT((indexValue += T))
 }
-function showImgT(e) {
+function showImgT(T) {
   var i
   const imgTW = document.querySelectorAll('#imgT').length
-  if (e > imgTW.length) {
+  if (T > imgTW.length) {
     indexValue = 1
   }
-  if (e < 1) {
+  if (T < 1) {
     indexValue = imgTW.length
   }
   for (i = 0; i < indexValue; i++) {

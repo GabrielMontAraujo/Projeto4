@@ -38,13 +38,20 @@ header{
 
 .menu2{
   align-items: baseline;
+  display: flex;
+  flex-direction: row;
   margin-right: 18rem;
   padding-left: 8rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .menu2 a{
   margin-left: 2rem;
+}
+
+.CartBox{
+  top: 2rem;
+  left:900px
 }
 
 .avatar{
@@ -74,7 +81,7 @@ hr{
   opacity: 0.3;
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
   header{
     margin-bottom: 0.5rem;
     padding-bottom: 0.6rem;
